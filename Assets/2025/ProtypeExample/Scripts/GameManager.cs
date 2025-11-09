@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour {
     public static GameManager Instance;
@@ -76,9 +77,18 @@ public class GameManager : MonoBehaviour {
             GodMode = !GodMode;
             Debug.Log("GodMode " + GodMode);
         }
+
         if(Input.GetKeyDown(KeyCode.Alpha2)) {
             Score += 1000;
             RefreshUI();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space)) {
+            PlayerJump();
+        }
+
+        if(Input.GetKeyDown(KeyCode.E)) {
+            PlayerShoot();
         }
 
         if(ShowFPS && Time.frameCount % 10 == 0) {
@@ -199,7 +209,7 @@ public class GameManager : MonoBehaviour {
 
     public void LoadNextLevel() {
         Level++;
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level" + Level);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level2" + Level);
         // forgot to reset half the state…
     }
 

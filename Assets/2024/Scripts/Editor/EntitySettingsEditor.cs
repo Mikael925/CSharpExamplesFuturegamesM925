@@ -39,8 +39,8 @@ public class EntitySettingsEditor : Editor {
         EditorGUILayout.LabelField("Entity Settings", EditorStyles.largeLabel);
         EditorGUILayout.Space(20);
 
-        DrawDefaultInspector();
-        //DrawMyCustomInspector();
+        //DrawDefaultInspector();
+        DrawMyCustomInspector();
 
         EditorGUILayout.Space(20);
 

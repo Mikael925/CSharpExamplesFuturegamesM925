@@ -2074,6 +2074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1269655b919b0b14daaa85e812a62663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: fg.2025.prototype::GameManager
+  cameraControl: {fileID: 0}
   PlayerPrefab: {fileID: 1708594480}
   EnemyPrefab: {fileID: 3702320219051161426, guid: 58abe47800503da4596ffc4733ca25ff, type: 3}
   BulletPrefab: {fileID: 5839397040550042045, guid: 50efa4966ad409144b86447db845010f, type: 3}
@@ -2093,7 +2094,6 @@ MonoBehaviour:
   GameOverPanel: {fileID: 0}
   VictoryPanel: {fileID: 0}
   SceneLight: {fileID: 547750174}
-  MainCam: {fileID: 1980595383}
   SpawnPoints:
   - {fileID: 244495314}
   - {fileID: 2059716274}
@@ -2776,6 +2776,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2b6712af898a894dac8338f33a02559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: fg.2025.prototype::CameraControl
+  moveSpeed: 5
+  lookSpeed: 2
 --- !u!1 &1994986770
 GameObject:
   m_ObjectHideFlags: 0

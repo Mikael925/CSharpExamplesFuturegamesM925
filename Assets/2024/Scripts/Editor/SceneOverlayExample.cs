@@ -5,10 +5,6 @@ using UnityEngine.SceneManagement;
 
 [InitializeOnLoad]
 public static class SceneOverlayExample {
-    static SceneOverlayExample() {
-        //SceneView.duringSceneGui += OnSceneGUI;
-    }
-
     static void OnSceneGUI(SceneView sceneView) {
         Handles.BeginGUI();
 
